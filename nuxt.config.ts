@@ -6,11 +6,9 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
     "@nuxt/eslint",
-    "@nuxtjs/seo",
     "motion-v/nuxt",
     "@nuxt/fonts",
     "nuxt-lucide-icons",
-    "@nuxtjs/plausible",
     "nuxt-svgo",
     "@nuxt/image",
   ],
@@ -29,17 +27,20 @@ export default defineNuxtConfig({
     namePrefix: "Icon",
   },
 
-  plausible: {
-    ignoredHostnames: ["localhost", "127.0.0.1"],
-    domain: ".",
-    apiHost: "https://plausible.wireway.ch",
-    autoOutboundTracking: true,
-    proxy: true,
-  },
-
   svgo: {
     autoImportPath: false,
     defaultImport: "component",
     dts: true,
+  },
+
+  ssr: false,
+  devServer: { host: process.env.TAURI_DEV_HOST || "localhost" },
+
+  vite: {
+    clearScreen: false,
+    envPrefix: ["VITE_", "TAURI_"],
+    server: {
+      strictPort: true,
+    },
   },
 });
