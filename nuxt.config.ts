@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "motion-v/nuxt",
     "@nuxt/fonts",
-    "nuxt-lucide-icons",
     "@nuxtjs/plausible",
     "nuxt-svgo",
     "@nuxt/image",
@@ -23,10 +22,6 @@ export default defineNuxtConfig({
 
   fonts: {
     provider: "bunny",
-  },
-
-  lucide: {
-    namePrefix: "Icon",
   },
 
   plausible: {
