@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "nuxt-lucide-icons",
     "@nuxtjs/plausible",
-    "@nuxthub/core",
     "nuxt-svgo",
     "@nuxt/image",
   ],
@@ -36,10 +35,6 @@ export default defineNuxtConfig({
     apiHost: "https://plausible.wireway.ch",
     autoOutboundTracking: true,
     proxy: true,
-  },
-
-  hub: {
-    database: true,
   },
 
   svgo: {

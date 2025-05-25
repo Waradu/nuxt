@@ -6,8 +6,7 @@ export default defineEventHandler(async (event) => {
     .values({
       name,
     })
-    .returning()
-    .get();
+    .returning();
 
   return todo;
 });

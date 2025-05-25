@@ -25,7 +25,7 @@ degit waradu/nuxt my-nuxt-project
 - [Lucide Icons](https://github.com/swisnl/nuxt-lucide-icons)
 - [Keyboard Handler](https://github.com/waradu/keyboard)
 - [Plausible](https://github.com/nuxt-modules/plausible)
-- [Drizzle](https://hub.nuxt.com/docs/recipes/drizzle)
+- [Drizzle](https://orm.drizzle.team/docs/get-started/postgresql-new)
 - [Zod](https://zod.dev)
 - [SVGO](https://nuxt.com/modules/nuxt-svgo)
 
