@@ -23,7 +23,7 @@ degit waradu/nuxt#tauri my-nuxt-tauri-project # or the tauri with nuxt template
 - [SEO](https://nuxt.com/modules/seo)
 - [Motion](https://motion.dev/docs/vue)
 - [Fonts](https://nuxt.com/modules/fonts)
-- [Lucide Icons](https://github.com/swisnl/nuxt-lucide-icons)
+- [Lucide Icons](https://lucide.dev/guide/packages/lucide-vue-next)
 - [Keyboard Handler](https://github.com/waradu/keyboard)
 - [Plausible](https://github.com/nuxt-modules/plausible)
 - [Drizzle](https://orm.drizzle.team/docs/get-started/postgresql-new)
