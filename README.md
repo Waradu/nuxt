@@ -12,6 +12,7 @@ bun i -g degit
 
 ```bash
 degit waradu/nuxt my-nuxt-project
+degit waradu/nuxt#tauri my-nuxt-tauri-project # or the tauri with nuxt template
 ```
 
 ## Includes
