@@ -1,6 +1,20 @@
 # Nuxt Template
 
-Includes:
+## Use Template
+
+### Install `degit`
+
+```bash
+bun i -g degit
+```
+
+### Clone
+
+```bash
+degit waradu/nuxt my-nuxt-project
+```
+
+## Includes
 
 - [Tailwind](https://nuxt.com/modules/tailwindcss)
 - [VueUse](https://nuxt.com/modules/vueuse)
@@ -15,7 +29,7 @@ Includes:
 - [Zod](https://zod.dev)
 - [SVGO](https://nuxt.com/modules/nuxt-svgo)
 
-Recommendations:
+## Recommendations
 
 - [Authentification](https://github.com/atinux/nuxt-auth-utils)
 - [Authorization](https://github.com/barbapapazes/nuxt-authorization)
