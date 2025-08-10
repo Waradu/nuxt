@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@layer utilities;
+
+@theme {
+  --font-serif: "Inter", sans-serif;
+}
+
+html,
+body,
+#__nuxt {
+  @apply font-serif;
+  width: 100%;
+  height: 100%;
+}

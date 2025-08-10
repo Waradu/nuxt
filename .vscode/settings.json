@@ -1,6 +1,15 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.preferences.autoImportFileExcludePatterns": [
-    "lucide-vue-next",
-  ]
+    "lucide-vue-next"
+  ],
+  "tailwindCSS.experimental.configFile": "app/assets/css/tailwind.css",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "tw`(.*?)`",
+    "tw\\('(.*?)'\\)",
+    "tw\\(\\s*('(.*?)'|\"(.*?)\")\\s*\\)"
+  ],
 }

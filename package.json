@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt-template",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,47 +8,33 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "start": "bun run .output/server/index.mjs",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "db:push": "drizzle-kit push",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
-    "db:create": "docker run --name drizzle-postgres -e POSTGRES_PASSWORD=admin123 -d -p 5432:5432 postgres",
-    "db:stop": "docker stop drizzle-postgres",
-    "db:start": "docker start drizzle-postgres",
-    "db:rm": "docker rm -f drizzle-postgres"
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@libsql/client": "^0.15.7",
-    "@nuxt/eslint": "1.4.1",
-    "@nuxt/fonts": "0.11.4",
-    "@nuxt/image": "1.10.0",
-    "@nuxtjs/plausible": "1.2.0",
-    "@nuxtjs/seo": "3.0.3",
-    "@nuxtjs/tailwindcss": "6.14.0",
-    "@vueuse/nuxt": "13.2.0",
-    "@waradu/keyboard": "^4.2.0",
-    "drizzle-orm": "^0.43.1",
+    "@nuxt/eslint": "1.8.0",
+    "@nuxt/fonts": "^0.11.4",
+    "@nuxtjs/seo": "^3.1.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@vueuse/nuxt": "^13.6.0",
+    "@waradu/keyboard": "^5.3.6",
     "eslint": "^9.0.0",
-    "lucide-vue-next": "^0.511.0",
-    "motion-v": "^1.1.1",
-    "nuxt": "^3.17.4",
-    "nuxt-svgo": "4.2.1",
-    "pg": "^8.16.0",
-    "remove": "^0.1.5",
-    "vue": "^3.5.14",
-    "vue-router": "^4.5.1",
-    "zod": "^3.25.28"
+    "lucide-vue-next": "latest",
+    "motion-v": "^1.7.0",
+    "nuxt": "^4.0.3",
+    "nuxt-svgo": "^4.2.6",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14"
   },
   "trustedDependencies": [
     "@parcel/watcher",
     "@tailwindcss/oxide",
-    "esbuild",
-    "unrs-resolver",
-    "vue-demi"
-  ],
-  "devDependencies": {
-    "@types/pg": "^8.15.2",
-    "drizzle-kit": "^0.31.1"
-  }
+    "unrs-resolver"
+  ]
 }
